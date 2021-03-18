@@ -51,6 +51,8 @@ LDAP Self-Service-Password (optional):
   - Don't ask for user's mail address. It will use the first address found in the corresponding user DN.
 - `LSSP_SHOW_MENU` (default: true)
   - Show menu on top of the page
+- `LSSP_ACCOUNT_FILTER` (default: `(&(objectClass=person)($ldap_login_attribute={login}))`)
+  - LDAP filter used when searching for a user account matching `LSSP_ATTR_LOGIN`. 
 
 OpenLDAP-Server (required):
 

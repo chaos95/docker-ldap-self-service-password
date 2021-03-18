@@ -140,6 +140,7 @@ configure_lssp() {
     LSSP_KEYPHRASE \
     LSSP_MAIL_FROM_LDAP \
     LSSP_SHOW_MENU \
+    LSSP_ACCOUNT_FILTER \
     SMTP_USEAUTH \
     SMTP_FROM \
     SMTP_HOST \

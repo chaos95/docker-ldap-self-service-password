@@ -30,7 +30,7 @@ $ldap_bindpw = "{{LDAP_PASS}}";
 $ldap_base = "{{LDAP_BASE}}";
 $ldap_login_attribute = "{{LSSP_ATTR_LOGIN}}";
 $ldap_fullname_attribute = "{{LSSP_ATTR_FN}}";
-$ldap_filter = "(&(objectClass=person)($ldap_login_attribute={login}))";
+$ldap_filter = "{{LSSP_ACCOUNT_FILTER}}";
 
 # Active Directory mode
 # true: use unicodePwd as password field

@@ -32,6 +32,9 @@ LSSP_HASH_METHOD=${LSSP_HASH_METHOD:-auto}
 LSSP_DEFAULT_ACTION=${LSSP_DEFAULT_ACTION:-change}
 LSSP_SHOW_MENU=${LSSP_SHOW_MENU:-true}
 LSSP_MAIL_FROM_LDAP=${LSSP_MAIL_FROM_LDAP:-false}
+if [ -z "${LSSP_ACCOUNT_FILTER}" ]; then
+  LSSP_ACCOUNT_FILTER='(&(objectClass=person)($ldap_login_attribute={login}))'
+fi
 
 ## reCAPTCHA
 RECAPTCHA_USE=${RECAPTCHA_USE:-false};
