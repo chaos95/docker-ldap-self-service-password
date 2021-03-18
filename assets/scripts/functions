@@ -148,6 +148,7 @@ configure_lssp() {
     SMTP_USER \
     SMTP_PASS \
     SMTP_TLS \
+    SMTP_REQUIRESAUTH \
     SMTP_DOMAIN \
     LSSP_MAIL_SUPPORT \
     LSSP_DEFAULT_ACTION \

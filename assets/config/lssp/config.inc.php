@@ -144,7 +144,7 @@ $notify_on_change = false;
 $mail_address_use_ldap = {{LSSP_MAIL_FROM_LDAP}};
 # Auth
 $mail_smtp_host = '{{SMTP_HOST}}';
-$mail_smtp_auth = true;
+$mail_smtp_auth = {{SMTP_REQUIRESAUTH}};
 $mail_smtp_user = '{{SMTP_USER}}';
 $mail_smtp_pass = '{{SMTP_PASS}}';
 $mail_smtp_port = {{SMTP_PORT}};
