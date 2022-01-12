@@ -4,8 +4,7 @@ set -e
 
 DIST_SUFFIX='dist'
 
-FILE_VHOST_CONFIG='/etc/apache2/sites-available/self-service-password.conf'
-FILE_LSSP_CONFIG='/usr/share/self-service-password/conf/config.inc.local.php'
+FILE_LSSP_CONFIG='/var/www/conf/config.inc.local.php'
 
 ## Replace placeholders with values
 # $1: file with placeholders to replace
@@ -155,8 +154,5 @@ configure_lssp() {
     RECAPTCHA_PRV_KEY \
     RECAPTCHA_THEME \
     RECAPTCHA_SSL
-
-  update_template "${FILE_VHOST_CONFIG}" \
-    VIRTUAL_SUBDIR
 }
 
