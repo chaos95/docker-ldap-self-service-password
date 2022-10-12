@@ -69,6 +69,8 @@ OpenLDAP-Server (required):
   - Password of the admin user
 - `LDAP_AD_MODE` (default: false)
   - Enable support for Active Directory
+- `LDAP_SAMBA_MODE` (default: false)
+  - Enable support for Samba password management on user accounts
 
 Mail-Server (optional):
 > If `SMTP_HOST` is not set, Password-Reset via Mail-Tokens will be disabled in the Web-Interface!
