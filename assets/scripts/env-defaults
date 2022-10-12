@@ -13,6 +13,7 @@ if [ -z ${LDAP_USER} ] ; then LDAP_USER="cn=admin,${LDAP_BASE}"; fi
 LDAP_PASS=${LDAP_PASS:-admin}
 LDAP_STARTTLS=${LDAP_STARTTLS:-true}
 LDAP_AD_MODE=${LDAP_AD_MODE:-false}
+LDAP_SAMBA_MODE=${LDAP_SAMBA_MODE:-false}
 
 ## MAIL
 SMTP_HOST=${SMTP_HOST:-smtp}
