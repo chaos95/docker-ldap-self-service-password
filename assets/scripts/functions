@@ -102,7 +102,7 @@ finalize_parameters() {
     LSSP_MAIL_SUPPORT=true
 
     LSSP_KEYPHRASE=${LDAP_KEYPHRASE:-}
-    if [ -z "${LSSP_KEYPHRASE}"]; then
+    if [ -z "${LSSP_KEYPHRASE}" ]; then
       LSSP_KEYPHRASE=$(pwgen -1 32)
       echo "  ... generated temporary keyphrase"
     fi
