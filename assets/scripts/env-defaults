@@ -51,3 +51,36 @@ RECAPTCHA_PRV_KEY=${RECAPTCHA_PRV_KEY};
 RECAPTCHA_THEME=${RECAPTCHA_THEME:-white};
 RECAPTCHA_SSL=${RECAPTCHA_USE:-false};
 
+
+## Local password policy
+# This is applied before directory password policy
+# Minimal length
+PWD_MIN_LENGTH=${PWD_MIN_LENGTH:-0};
+# Maximal length
+PWD_MAX_LENGTH=${PWD_MAX_LENGTH:-0};
+# Minimal lower characters
+PWD_MIN_LOWER=${PWD_MIN_LOWER:-0};
+# Minimal upper characters
+PWD_MIN_UPPER=${PWD_MIN_UPPER:-0};
+# Minimal digit characters
+PWD_MIN_DIGIT=${PWD_MIN_DIGIT:-0};
+# Minimal special characters
+PWD_MIN_SPECIAL=${PWD_MIN_SPECIAL:-0};
+# Definition of special characters
+PWD_SPECIAL_CHARS=${PWD_SPECIAL_CHARS:-"^a-zA-Z0-9"};
+# Forbidden characters
+#PWD_FORBIDDEN_CHARS=${PWD_FORBIDDEN_CHARS:-"@%"};
+# Don't reuse the same password as currently
+PWD_NO_REUSE=${PWD_NO_REUSE:-true};
+# Complexity: number of different class of character required
+PWD_COMPLEXITY=${PWD_COMPLEXITY:-0};
+# Show policy constraints message:
+# always
+# never
+# onerror
+PWD_SHOW_POLICY=${PWD_SHOW_POLICY:-"onerror"};
+# Position of password policy constraints message:
+# above - the form
+# below - the form
+PWD_SHOW_POLICY_POS=${PWD_SHOW_POLICY_POS:-"below"};
+
