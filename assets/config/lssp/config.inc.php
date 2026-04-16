@@ -72,34 +72,34 @@ $hash_options['crypt_salt_prefix'] = "$6$";
 # Local password policy
 # This is applied before directory password policy
 # Minimal length
-$pwd_min_length = 0;
+$pwd_min_length = {{PWD_MIN_LENGTH}};
 # Maximal length
-$pwd_max_length = 0;
+$pwd_max_length = {{PWD_MAX_LENGTH}};
 # Minimal lower characters
-$pwd_min_lower = 0;
+$pwd_min_lower = {{PWD_MIN_LOWER}};
 # Minimal upper characters
-$pwd_min_upper = 0;
+$pwd_min_upper = {{PWD_MIN_UPPER}};
 # Minimal digit characters
-$pwd_min_digit = 0;
+$pwd_min_digit = {{PWD_MIN_DIGIT}};
 # Minimal special characters
-$pwd_min_special = 0;
+$pwd_min_special = {{PWD_MIN_SPECIAL}};
 # Definition of special characters
-$pwd_special_chars = "^a-zA-Z0-9";
+$pwd_special_chars = "{{PWD_SPECIAL_CHARS}}";
 # Forbidden characters
-#$pwd_forbidden_chars = "@%";
+#$pwd_forbidden_chars = "{{PWD_FORBIDDEN_CHARS}}";
 # Don't reuse the same password as currently
-$pwd_no_reuse = true;
+$pwd_no_reuse = {{PWD_NO_REUSE}};
 # Complexity: number of different class of character required
-$pwd_complexity = 0;
+$pwd_complexity = {{PWD_COMPLEXITY}};
 # Show policy constraints message:
 # always
 # never
 # onerror
-$pwd_show_policy = "onerror";
+$pwd_show_policy = "{{PWD_SHOW_POLICY}}";
 # Position of password policy constraints message:
 # above - the form
 # below - the form
-$pwd_show_policy_pos = "below";
+$pwd_show_policy_pos = "{{PWD_SHOW_POLICY_POS}}";
 
 # Who changes the password?
 # Also applicable for question/answer save
