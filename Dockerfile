@@ -1,4 +1,5 @@
-FROM docker.io/ltbproject/self-service-password:${SSP_VERSION:-latest}
+ARG SSP_VERSION=latest
+FROM docker.io/ltbproject/self-service-password:${SSP_VERSION}
 
 ENV SCRIPT_DIR /opt
 
